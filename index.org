@@ -1,0 +1,11 @@
+#+REVEAL_ROOT: ./reveal-root
+#+REVEAL_THEME: serif
+#+OPTIONS: toc:nil num:nil date:nil email:t  reveal_title_slide:nil
+
+# Square Bracket Open [
+#+MACRO: BO @@latex:\char91@@ @@html:&#91;@@
+# Square Bracket Close ]
+#+MACRO: BC @@latex:\char93@@ @@html:&#93;@@
+
+* My Presentations:
+- [[./git-hub-n-tricks/index.html][Git{{{BO}}}Hub{{{BC}}} 'n' Tricks]]

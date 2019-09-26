@@ -1,0 +1,150 @@
+#+REVEAL_ROOT: ../reveal-root
+#+REVEAL_THEME: serif
+#+REVEAL_EXTRA_CSS: ./index.css
+#+OPTIONS: toc:nil num:nil date:nil email:t
+#+OPTIONS: reveal_title_slide:"<h2>%t</h2><br><h3>%a</h3><h4>@kkhan01</h4>"
+#+TITLE:  Git[Hub] 'n' Tricks
+#+AUTHOR: Khinshan Khan
+
+* House Keeping
+
+* Photo Consent Form
+[[file:imgs/qr-code.png]]
+* FactSet on Oct 17!
+* Sign in so we Keep you Flushed with Food
+* This isn't an official GitHub workshop
+
+* Set up an account
+[[file:imgs/signup.png]]
+* Story Time
+
+* Version Control
+
+* Central Database
+
+* Decentralized Database
+
+* The Git Keywords
+  #+ATTR_REVEAL: :frag (t)
+  - git add
+  - git commit
+  - git push
+  - git pull
+  - git branch
+  - git merge
+  - git checkout
+  - git fetch
+  - git remote
+
+* Resources
+  - [[https://lab.github.com/githubtraining/introduction-to-github][GitHub Training]]
+  - [[https://www.atlassian.com/git][Atlassian]]
+  - [[https://education.github.com/git-cheat-sheet-education.pdf][GitHub Cheat Sheet]]
+  - [[https://www.youtube.com/githubguides][Video Series]]
+
+* Check out CSSI 395.86
+  #+ATTR_REVEAL: :frag (t)
+  - Maintain a blog
+  - 10+ contributions
+  - (H)(F)OSS
+  - Git[Hub] (more in depth)
+  - Licenses
+  - How OSS can make $$$
+  - Speakers!
+  - So much more!
+
+* Some key features
+
+* Starring
+  - Clout
+  - Shows support
+  - Bookmark
+  - Shows coverage/ usage
+* Following
+  [[file:imgs/shiffman-profile.png]]
+* Following
+  [[file:imgs/aiden-profile.png]]
+* Following
+  [[file:imgs/followers-starring.png]]
+* Watching
+  [[file:imgs/cats-watching.png]]
+* Feed
+  [[file:imgs/sample-feed.png]]
+* Feed
+  [[file:imgs/sample-feed-arrows.png]]
+* GraphQL
+  #+BEGIN_SRC graphql
+query {
+  user(login: "{{uname}}") {
+    watching({{list identifier}}: {{num}}) {
+      edges {
+        repository:node {
+          nameWithOwner
+        }
+      }
+    }
+  }
+}
+  #+END_SRC
+* Student Pack!
+  [[https://education.github.com/pack][The Pack]]
+
+  Some Key Ones:
+  #+ATTR_REVEAL: :frag (t)
+  - Free domains!
+  - AWS
+  - SendGrid
+  - DataDog
+  - Digital Ocean
+
+* Hacktoberfest
+  #+BEGIN_HTML
+  https://hacktoberfest.digitalocean.com/assets/logo-hf19-full-10f3c000cea930c76acc1dedc516ea7118b95353220869a3051848e45ff1d656.svg
+  #+END_HTML
+
+* Hacktoberfest
+  #+ATTR_REVEAL: :frag (t)
+- [[https://hacktoberfest.digitalocean.com/][Sign ups are open]]
+- Contributions start from Oct 1
+- Free swag!
+- Free shirt
+* Let's host a Site
+  #+ATTR_REVEAL: :frag (t)
+  - Hosting a static site using GitHub Pages is free
+    - No credit card required
+  - We're going to host /this/ slideshow site on GitHub!
+
+* Some constraints of GitHub Pages
+  - Site has to be static
+  - Site should be "generated" beforehand
+
+* Other ways to a Website
+  You can use static generators!
+  #+ATTR_REVEAL: :frag (t)
+  - [[https://github.com/Frozen-Flask/Frozen-Flask][Frozen Flask]]
+  - [[https://www.gatsbyjs.org/][Gatsby]]
+  - [[http://harpjs.com/][Harp]]
+  - [[https://gohugo.io/][Hugo]]
+
+* Jekyll
+  - Allows for a "backend"
+  - blog-centric framework
+
+* Some other constraints of GitHub Pages
+  - Can only use verified, whitelisted gems (~8)
+  - Hard for non programmers to contribute
+
+* Netlify
+  Examples
+  #+ATTR_REVEAL: :frag (t)
+  - [[https://github.com/kkhan01/alembic-kit][My Personal Site]]
+  - [[https://github.com/the-programmers-hangout/website][TPH Site]]
+
+* GitHub Workflows
+
+* GitHub Secrets
+
+* Freedom at last
+  - [[https://kkhan01.github.io/presentations/][https://kkhan01.github.io/presentations/]]
+  - [[https://github.com/kkhan01][@kkhan01]]
+  - khinshan@hunteracm.org
