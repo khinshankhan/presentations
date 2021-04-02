@@ -1,6 +1,6 @@
 #+REVEAL_ROOT: ./reveal-root
 #+REVEAL_THEME: serif
-#+REVEAL_EXTRA_CSS: ../shared/common.css
+#+REVEAL_EXTRA_CSS: ./shared/common.css
 #+OPTIONS: toc:nil num:nil date:nil email:t  reveal_title_slide:nil
 
 # Square Bracket Open [
