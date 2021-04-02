@@ -1,6 +1,6 @@
 #+REVEAL_ROOT: ../reveal-root
 #+REVEAL_THEME: serif
-#+REVEAL_EXTRA_CSS: ./index.css
+#+REVEAL_EXTRA_CSS: ../shared/common.css
 #+OPTIONS: toc:nil num:nil date:nil email:t
 #+OPTIONS: reveal_title_slide:"<h2>%t</h2><br><h3>%a</h3><h4>@kkhan01</h4>"
 #+TITLE:  Intro to AWS
