@@ -11,6 +11,7 @@
 
 <link rel="stylesheet" href="../reveal-root/css/theme/serif.css" id="theme"/>
 
+<link rel="stylesheet" href="../shared/common.css"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -30,22 +31,22 @@
 </section>
 
 <section>
-<section id="slide-org7d479fc">
-<h2 id="org7d479fc">How the Internet Works</h2>
+<section id="slide-org453056d">
+<h2 id="org453056d">How the Internet Works</h2>
 <p>
 Pfft I know how the internet works, why bother?
 </p>
 
 </section>
-<section id="slide-orgbfca9e5">
-<h3 id="orgbfca9e5">Lower Level Understanding</h3>
+<section id="slide-org0c0f0cc">
+<h3 id="org0c0f0cc">Lower Level Understanding</h3>
 <p>
 Understanding the internet at a bit of a lower level and recognizing all websites can actually be reduced to the same steps helps us understand more complicated things.
 </p>
 
 </section>
-<section id="slide-orgca9ef8f">
-<h3 id="orgca9ef8f">The History</h3>
+<section id="slide-org5f8b5c7">
+<h3 id="org5f8b5c7">The History</h3>
 <p>
 The history of the internet (not from Tim Berners Lee time but sure if you want&#x2026;), helps us understand why and how certain things like docker, digital ocean, and aws came to be.
 </p>
@@ -53,8 +54,8 @@ The history of the internet (not from Tim Berners Lee time but sure if you want&
 </section>
 </section>
 <section>
-<section id="slide-org68b0752">
-<h2 id="org68b0752">Meet Bob</h2>
+<section id="slide-org84f378c">
+<h2 id="org84f378c">Meet Bob</h2>
 <p>
 Bob is sort of the user we'll follow.
 </p>
@@ -66,8 +67,8 @@ He could be you or I or anyone else. He's just a person accessing the internet t
 </section>
 </section>
 <section>
-<section id="slide-org5d5ec1c">
-<h2 id="org5d5ec1c">Meet Company XYZ</h2>
+<section id="slide-orgafeb717">
+<h2 id="orgafeb717">Meet Company XYZ</h2>
 <p>
 Company XYZ is more or less a placeholder for a random company that has a website.
 </p>
@@ -77,8 +78,8 @@ We'll look at what they have to do to host their website so Bob can interact wit
 </p>
 
 </section>
-<section id="slide-orgd2383ce">
-<h3 id="orgd2383ce">Common Companies I'll Use</h3>
+<section id="slide-orgaa12963">
+<h3 id="orgaa12963">Common Companies I'll Use</h3>
 <p>
 I'll probably make them Google often because <a href="https://www.google.com">https://www.google.com</a> is a site we're familiar with.
 </p>
@@ -86,6 +87,87 @@ I'll probably make them Google often because <a href="https://www.google.com">ht
 <p>
 I'll also use a small flower chain or taco cart as other companies.
 </p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf174bb8">
+<h2 id="orgf174bb8">What Happens when we Visit a Website?</h2>
+<p style="text-align: left;">Steps:</p>
+
+<ol>
+<li>Open your device (pc/ laptop/ mobile).</li>
+<li>Open a web browser (firefox, google chrome, etc).</li>
+<li>Enter the URL.</li>
+
+</ol>
+
+</section>
+<section id="slide-orgee6f2a6">
+<h3 id="orgee6f2a6">Visit a Website</h3>
+<p>
+Let's say we navigate to google.com.
+</p>
+
+
+<div id="org308435f" class="figure">
+<p><img src="https://cdn.mos.cms.futurecdn.net/4TBgjGyyxufaKfztZy87Bk-1200-80.jpg" alt="4TBgjGyyxufaKfztZy87Bk-1200-80.jpg" />
+</p>
+</div>
+
+</section>
+<section id="slide-org966be01">
+<h3 id="org966be01">How does our Browser Know?</h3>
+<p>
+Our browser somehow automagically figured out the logo and search bar and everything else.
+</p>
+
+<p>
+But we don't have any of that data saved on our computer, so how did it figure out where the stuff is located and how it should look?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc6cb955">
+<h2 id="orgc6cb955">Requests requests requests!</h2>
+<p>
+For now, we'll focus on <code>GET</code> requests, but they're just easier to talk about.
+</p>
+
+</section>
+<section id="slide-org9510ba7">
+<h3 id="org9510ba7">Status Codes</h3>
+
+<div id="org26e25a3" class="figure">
+<p><img src="https://media.discordapp.net/attachments/244238416248569857/752886284992905216/1599572464244.jpg?width=700&amp;height=525" alt="1599572464244.jpg?width=700&amp;height=525" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgb698930">
+<h3 id="orgb698930">Status Codes Explained</h3>
+<p>
+The codes are in hundreds. You're probably already familiar with some like 404 for a page not found.
+</p>
+
+<ul>
+<li>1xx: Informational</li>
+<li>2xx: Success</li>
+<li>3xx: Redirection</li>
+<li>4xx: Client Error</li>
+<li>5xx: Server Error</li>
+
+</ul>
+
+</section>
+<section id="slide-orgefd40cf">
+<h3 id="orgefd40cf">The google.com Requests</h3>
+
+<div id="org59d7830" class="figure">
+<p><img src="imgs/google-network-calls.png" alt="google-network-calls.png" />
+</p>
+</div>
 </section>
 </section>
 </div>

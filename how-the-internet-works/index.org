@@ -29,3 +29,40 @@
    I'll probably make them Google often because https://www.google.com is a site we're familiar with.
 
    I'll also use a small flower chain or taco cart as other companies.
+
+* What Happens when we Visit a Website?
+  #+begin_export html
+  <p style="text-align: left;">Steps:</p>
+  #+end_export
+
+  1. Open your device (pc/ laptop/ mobile).
+  2. Open a web browser (firefox, google chrome, etc).
+  3. Enter the URL.
+
+** Visit a Website
+   Let's say we navigate to google.com.
+
+   https://cdn.mos.cms.futurecdn.net/4TBgjGyyxufaKfztZy87Bk-1200-80.jpg
+
+** How does our Browser Know?
+   Our browser somehow automagically figured out the logo and search bar and everything else.
+
+   But we don't have any of that data saved on our computer, so how did it figure out where the stuff is located and how it should look?
+
+* Requests requests requests!
+  For now, we'll focus on =GET= requests, but they're just easier to talk about.
+
+** Status Codes
+   https://media.discordapp.net/attachments/244238416248569857/752886284992905216/1599572464244.jpg?width=700&height=525
+
+** Status Codes Explained
+   The codes are in hundreds. You're probably already familiar with some like 404 for a page not found.
+
+   - 1xx: Informational
+   - 2xx: Success
+   - 3xx: Redirection
+   - 4xx: Client Error
+   - 5xx: Server Error
+
+** The google.com Requests
+   [[file:imgs/google-network-calls.png]]
