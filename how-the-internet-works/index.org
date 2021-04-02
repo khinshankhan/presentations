@@ -1,0 +1,31 @@
+#+REVEAL_ROOT: ../reveal-root
+#+REVEAL_THEME: serif
+#+REVEAL_EXTRA_CSS: ../shared/common.css
+#+OPTIONS: toc:nil num:nil date:nil email:t
+#+OPTIONS: reveal_title_slide:"<h2>%t</h2><br><h3>%a</h3><h4>@kkhan01</h4>"
+#+TITLE:  How the Internet Works
+#+AUTHOR: Khinshan Khan
+
+* How the Internet Works
+  Pfft I know how the internet works, why bother?
+
+** Lower Level Understanding
+   Understanding the internet at a bit of a lower level and recognizing all websites can actually be reduced to the same steps helps us understand more complicated things.
+
+** The History
+   The history of the internet (not from Tim Berners Lee time but sure if you want...), helps us understand why and how certain things like docker, digital ocean, and aws came to be.
+
+* Meet Bob
+  Bob is sort of the user we'll follow.
+
+  He could be you or I or anyone else. He's just a person accessing the internet to view webpages.
+
+* Meet Company XYZ
+  Company XYZ is more or less a placeholder for a random company that has a website.
+
+  We'll look at what they have to do to host their website so Bob can interact with it.
+
+** Common Companies I'll Use
+   I'll probably make them Google often because https://www.google.com is a site we're familiar with.
+
+   I'll also use a small flower chain or taco cart as other companies.

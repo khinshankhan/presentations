@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>How the Internet Works</title>
+<meta name="author" content="(Khinshan Khan)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../reveal-root/css/reveal.css"/>
+
+<link rel="stylesheet" href="../reveal-root/css/theme/serif.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../reveal-root/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2>How the Internet Works</h2><br><h3>Khinshan Khan</h3><h4>@kkhan01</h4>
+</section>
+
+<section>
+<section id="slide-org7d479fc">
+<h2 id="org7d479fc">How the Internet Works</h2>
+<p>
+Pfft I know how the internet works, why bother?
+</p>
+
+</section>
+<section id="slide-orgbfca9e5">
+<h3 id="orgbfca9e5">Lower Level Understanding</h3>
+<p>
+Understanding the internet at a bit of a lower level and recognizing all websites can actually be reduced to the same steps helps us understand more complicated things.
+</p>
+
+</section>
+<section id="slide-orgca9ef8f">
+<h3 id="orgca9ef8f">The History</h3>
+<p>
+The history of the internet (not from Tim Berners Lee time but sure if you want&#x2026;), helps us understand why and how certain things like docker, digital ocean, and aws came to be.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org68b0752">
+<h2 id="org68b0752">Meet Bob</h2>
+<p>
+Bob is sort of the user we'll follow.
+</p>
+
+<p>
+He could be you or I or anyone else. He's just a person accessing the internet to view webpages.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org5d5ec1c">
+<h2 id="org5d5ec1c">Meet Company XYZ</h2>
+<p>
+Company XYZ is more or less a placeholder for a random company that has a website.
+</p>
+
+<p>
+We'll look at what they have to do to host their website so Bob can interact with it.
+</p>
+
+</section>
+<section id="slide-orgd2383ce">
+<h3 id="orgd2383ce">Common Companies I'll Use</h3>
+<p>
+I'll probably make them Google often because <a href="https://www.google.com">https://www.google.com</a> is a site we're familiar with.
+</p>
+
+<p>
+I'll also use a small flower chain or taco cart as other companies.
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="../reveal-root/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: '../reveal-root/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: '../reveal-root/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../reveal-root/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: '../reveal-root/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: '../reveal-root/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
