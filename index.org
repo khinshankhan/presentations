@@ -9,3 +9,5 @@
 
 * My Presentations:
 - [[./git-hub-n-tricks/index.html][Git{{{BO}}}Hub{{{BC}}} 'n' Tricks]]
+- [[file:how-the-internet-works/index.html][How the Internet Works]]
+- [[file:intro-to-aws/index.html][Intro to AWS]]
