@@ -6,114 +6,146 @@
 #+TITLE:  Intro to AWS
 #+AUTHOR: Khinshan Khan
 
+* AWS
+  AWS stands for Amazon Web Services.
+
+  They provide services for developers. I recommend looking at the [[file:~/github/presentations/how-the-internet-works/index.html][How the Internet Works]] Presentation before this one.
+
 * AWS Services
   ... there's a lot!
 
   [[file:imgs/aws-services.png]]
+
 * EC2
   Elastic Compute Cloud
 
   [[https://images.squarespace-cdn.com/content/v1/5500a991e4b0ed07e64029e1/1441073679651-QHFNWW7PRYE94LUVDDUC/ke17ZwdGBToddI8pDm48kEQ2Glk2sPsnG3fp6sOg8zpZw-zPPgdn4jUwVcJE1ZvWEtT5uBSRWt4vQZAgTJucoTqqXjS3CfNDSuuf31e0tVEdzz_iMfAAMTL-5U729Slg2ijlNcBIboMuoYM-phOy-x926scO3xePJoa6uVJa9B4/aws-ec2-logo-v3.png?format=500w]]
 
   https://www.cadable.com/shop/aws-ec2-provisioning
-* EC2
-  Basically a VPS in the cloud that can scale.
 
-  This is usually split up for large and scalable web apps with the following services:
+** EC2
+   Basically a VPS in the cloud that can scale.
+
+   This is usually split up for large and scalable web apps with the following services -->
+
 * S3
   Simple Storage Service
 
   [[https://blitapp.com/blog/articles/upload-your-captures-to-s3/amazon-s3.jpg]]
 
   https://blitapp.com/blog/articles/upload-your-captures-to-s3
-* S3
-  You can store data "objects" in a geographic location.
 
-  The "objects" are really just any type of file. This is often used for assets like html files, css files, js files, json files, etc. It's akin to filesytem as a service.
+** S3
+   You can store data "objects" in a geographic location.
+
+   The "objects" are really just any type of file. This is often used for assets like html files, css files, js files, json files, etc. It's akin to filesytem as a service.
 
 * Cloudfront
   [[https://www.metaltoad.com/sites/default/files/styles/large/public/2020-05/aws-cloudfront-logo-blog-header.png]]
 
   https://www.metaltoad.com/
-* Cloudfront
-  A Content Delivery Network (CDN) which proxies and caches web data for users whenever possible.
 
-  Usually you use this in unison with S3 for making websites.
+** Cloudfront
+   A Content Delivery Network (CDN) which proxies and caches web data for users whenever possible.
+
+   Usually you use this in unison with S3 for making websites.
 
 * Lambda
-  [[https://www.thedevcoach.co.uk/wp-content/uploads/2020/01/aws-lambda.png]]
+  https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/2017/10/1-yaTKFg6K8tTPXJtBUZ0_lw.png
 
-  https://www.thedevcoach.co.uk
-* Lambdas
+  https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com
 
-  This is the "backend" portion of the more scalable and low cost servers split.
-  You bundle up your code into a single function. Lambda functions are "stateless", which allows it to scale easily since there's no architecture necessary to spin up along with each instance. They can easily be containerized.
-* Lambda Hot n' Cold
-  After a period of inactivity, AWS will drop the container, and the function will become inactive (this is called the function becoming "cold").
+** Lambdas
+   This is the "backend" portion of the more scalable and low cost servers split.
 
-  It gets hot again when a trigger is detected, start up does take some time, but you're only paying for when you're using the computing power.
-* Lambda Events
-  Lambda functions need to be hook up to events/ triggers.
+   You bundle up your code into a single function. Lambda functions are "stateless", which allows it to scale easily since there's no architecture necessary to spin up along with each instance. They can easily be containerized.
 
-  A basic event would be an "API Gateway Proxy Request", which is basically just an endpoint.
+** Lambda Hot n' Cold
+   After a period of inactivity, AWS will drop the container, and the function will become inactive (this is called the function becoming "cold").
 
-  Another kind of trigger can be to a database event like write or modify.
+   It gets hot again when a trigger is detected, start up does take some time, but you're only paying for when you're using the computing power.
 
-  There are a lot more usecases, but it would take hours 🙈
-* Stateless are useless, right?
-  If they're stateless, how are they useful is probably an important question right?
+** Lambda Events
+   Lambda functions need to be hook up to events/ triggers.
 
-  If it's entirely stateless, you can't view its logs or save data or do anything. Usually a backend is meant to process data and handle things like APIs and DBs (stereotype, I know 😱).
+   A basic event would be an "API Gateway Proxy Request", which is basically just an endpoint.
 
-  The secret to serverless and stateless are services and /dependency injections/.
-* Backend Meme 😂
-  [[https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/e0fdfab5792e52c9ff3841ea52b91d693746f0a310fc7216a6004992513f3ff3_1.jpg]]
+   Another kind of trigger can be to a database event like write or modify.
+
+   There are a lot more usecases, but it would take hours 🙈
+
+** Stateless are useless, right?
+   If they're stateless, how are they useful is probably an important question right?
+
+   If it's entirely stateless, you can't view its logs or save data or do anything. Usually a backend is meant to process data and handle things like APIs and DBs (stereotype, I know 😱).
+
+   The secret to serverless and stateless are services and /dependency injections/.
+
+** Backend Meme 😂
+   [[https://imageproxy.ifunny.co/crop:x-20,resize:640x,quality:90x75/images/e0fdfab5792e52c9ff3841ea52b91d693746f0a310fc7216a6004992513f3ff3_1.jpg]]
+
 * CloudWatch
+  https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com/wp-content/uploads/Amazon-Cloudwatch-2.png
+  https://p2zk82o7hr3yb6ge7gzxx4ki-wpengine.netdna-ssl.com
 
-  Basically logs and metrics as a service. It will show your logs
-  #+begin_src go
+** CloudWatch
+
+   Basically logs and metrics as a service. It will show your logs
+   #+begin_src go
 fmt.Println("Hello!")
-  #+end_src
+   #+end_src
 
-  with timestamps and show when a lambda starts and ends an connection and if it failed, etc.
+   with timestamps and show when a lambda starts and ends an connection and if it failed, etc.
 
-  Note: you'll need to stringify and prettify your objects 🎨
+** Make 'em Pretty!
 
-  #+begin_src go
+   You'll need to stringify your objects. You can also prettify them by adding indents  🎨
+
+   #+begin_src go
 objIndented, err := json.MarshalIndent(obj, "", "  ")
 if err != nil {
 	panic(err)
 }
 
 fmt.Printf("My Cool Obj as a pretty string:\n%v\n", string(objIndented))
-  #+end_src
+   #+end_src
 * DynamoDB
   [[https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/DynamoDB.png/220px-DynamoDB.png]]
 
   https://upload.wikimedia.org/wikipedia/commons/
 
-* DynamoDB
-  Although your data may look like rows in the aws console, they're documents!
+** DynamoDB
+   Although your data may look like rows in the aws console, they're documents!
 
-  DynamoDB is a key-value and document database, think of jsons as the rows.
-* DynamoDB Internals
-  [[https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/SQLtoNoSQL.png]]
-* DynamoDB Quirks
-  You need a PK (partition key) and a SK (sort key). These keys act on attributes on the documents to make them query-able.
+   DynamoDB is a key-value and document database, think of jsons as the rows.
 
-  The PK acts to store documents in such a manner that it'll be similar to a hashmap in a sense, though the PK can be the same for some documents, in which case they're just grouped together.
+** DynamoDB Internals
+   [[https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/SQLtoNoSQL.png]]
 
-  The SK acts as a "sort and filter" on attributes. It allow for queries like if the SK of an item starts with, ends with, is between, less, greater, etc.
-* Let's make Gamestop
+** DynamoDB Quirks
+   You need a PK (partition key) and a SK (sort key).
+
+   These keys act on attributes on the documents to make them query-able.
+
+** But what ARE PK and SK?
+   The PK acts to store documents in such a manner that it'll be similar to a hashmap in a sense, though the PK can be the same for some documents, in which case they're just grouped together.
+
+   The SK acts as a "sort and filter" on attributes. It allow for queries like if the SK of an item starts with, ends with, is between, less, greater, etc.
+
+* Let's make Gamestop! With DynamoDB 😏
   https://www.pngitem.com/pimgs/m/22-222301_gamestop-logo-gamestop-hd-png-download.png
 
-  I wanted to do a mini example of how a dynamo db may look, but of course this isn't how Gamestop is actually implemented.
+  I wanted to do a mini example of how a dynamo db may look because it'll teach us more about how it works.
 
-  Let's focus on the aspect of how Gamestop sells games 👀
+** More Deets
+   Of course this isn't how Gamestop is actually implemented, but it's just an example.
 
-  We'll make 3 users: Alice, Jane, and John.
-* What the Collections may Look Like
-  #+begin_src js
+   Let's focus on the aspect of how Gamestop sells games 👀
+
+   We'll make 3 users: Alice, Jane, and John.
+
+** What the Collections may Look Like
+   #+begin_src js
 [
   {
     name: Alice,
@@ -131,37 +163,49 @@ fmt.Printf("My Cool Obj as a pretty string:\n%v\n", string(objIndented))
     location: NY
   },
 ]
-  #+end_src
-* What about our DB Keys?
-  Let's consider a login. Let's make the login super simplified: they just need to enter in their name (insecure, I know 😱).
+   #+end_src
 
-  For querying their names, we just need a PK of name and we can get their information pretty easily.
+** What about our DB Keys?
+   Let's consider a login. Let's make the login super simplified: they just need to enter in their name (insecure, I know 😱).
 
-  If there were 2 Alices but in different states, we can also add in a SK on location.
-* What about more complicated things?
-  As Gamestop sells games, maybe they need to decide where to send more mature games vs family friendly games. In which case, we'll want a count of mature audience.
+   For querying their names, we just need a PK of name and we can get their information pretty easily.
 
-  We can do a simplified count if our PK is the location and the SK is the age, and then per state we run the look up along with age > 18.
+   If there were 2 Alices but in different states, we can also add in a SK on location.
 
-  This was insanely inefficient and useless tbh, a scan and reduce would've been easier, but it's just an example...
-* Wow so basic...?
-  I know, it seemed pretty easy to do the query, but we have an entirely different PK and SK from login when we searched.
+** What about more complicated things?
+   As Gamestop sells games, maybe they need to decide where to send more mature games vs family friendly games. In which case, we'll want a count of mature audience.
 
-  So, does dynamo allow for multiple PK and SK? Yes, but at a cost.
+   We can do a simplified count if our PK is the location and the SK is the age, and then per state we run the look up along with age > 18.
 
-  What you'll have to do is create a GSI (global secondary index, you can also create a local one depending on your usecase).
-* DynamoDB GSIs
-  A GSI lets you define another PK and SK, at a cost.
+   This was insanely inefficient and useless tbh, a scan and reduce would've been easier, but it's just an example...
 
-  The way it's implemented under the hood is basically by creating another second, read only, table which it will automatically copy over rows from the primary table.
+** Wow, so basic...?
+   I know, it seemed pretty easy to do the query, but we have an entirely different PK and SK from login when we searched.
 
-  Note: the copy mechanism depends on the primary table's row having the PK attribute, so in our example, if John didn't specify location, the row wouldn't be copied over and wouldn't appear in our age query.
+   So, does dynamo allow for multiple PK and SK? Yes.
+
+   What you'll have to do is create a GSI (global secondary index, you can also create a local one depending on your usecase).
+
+** DynamoDB GSIs
+   A GSI lets you define another PK and SK, but at a cost.
+
+   The way it's implemented under the hood is basically by creating another second, read only, table which it will automatically copy over rows from the primary table.
+
+** Minor Note about GSI
+   The copy mechanism depends on the primary table's row having the PK attribute, so in our example, if John didn't specify location, the row wouldn't be copied over and wouldn't appear in our age query.
+
 * SQS
   Simple Queue Service
 
-  Message queue in the cloud to share messages between your infrastructure. These messages are short lived usually.
+  https://miro.medium.com/max/500/1*IgMT-uUiuSgXpdtQyIa2Qw.png
 
-  Eg you can have a lambda pull data from an api every so often and store it in the sqs. Then you can process the data in a different lambda etc.
+  https://miro.medium.com
+
+** SQS
+   Message queue in the cloud to share messages between your infrastructure. These messages are short lived usually.
+
+   Eg you can have a lambda pull data from an api every so often and store it in the queue. Then you can process the data in a different lambda etc.
+
 * TLDR AWS Services
   There's so much more depth and breadth we can get into about AWS services.
 
