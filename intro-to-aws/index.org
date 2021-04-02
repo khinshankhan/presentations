@@ -9,7 +9,9 @@
 * AWS
   AWS stands for Amazon Web Services.
 
-  They provide services for developers. I recommend looking at the [[file:~/github/presentations/how-the-internet-works/index.html][How the Internet Works]] Presentation before this one.
+  https://p.kindpng.com/picc/s/152-1522129_how-to-manage-and-automate-aws-ebs-snapshots.png
+
+  They provide services for developers... I recommend looking at the [[file:~/github/presentations/how-the-internet-works/index.html][How the Internet Works]] Presentation before this one.
 
 * AWS Services
   ... there's a lot!
