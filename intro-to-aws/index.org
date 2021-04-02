@@ -124,6 +124,8 @@ fmt.Printf("My Cool Obj as a pretty string:\n%v\n", string(objIndented))
 ** DynamoDB Internals
    [[https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/SQLtoNoSQL.png]]
 
+   https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.Accessing.html
+
 ** DynamoDB Quirks
    You need a PK (partition key) and a SK (sort key).
 
