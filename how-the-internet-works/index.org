@@ -99,7 +99,7 @@
    But what about requests? Well, open up your inspect element and head over to the =network= tab and reload =hello.html=!
 
 * Where does the HTML come from when not Local?
-   But we don't have any of that data saved on our computer, so how did the browser get the HTML for google.com?
+  But we don't have any of that data saved on our computer, so how did the browser get the HTML for google.com?
 
 ** ISPs and DNS
    When we throw in google.com in our address bar, that query goes
@@ -124,6 +124,33 @@
    Via the address, it can expose endpoints which server up information depending on how they're invoked + its implementation.
 
    Just as we were able to get HTML from our local filesystem, a simple apache server can expose the filesystem such that instead of your prefixed root path, it'll be =ip address/path/to/file=
+
+** Pattern
+   #+begin_export html
+   <p>   The pattern more or less is as follows --</p>
+   <ol>
+     <li>
+       Look up address
+       <br/>
+       browser -> ISP -> DNS
+     </li>
+     <li>
+       Get address
+       <br/>
+       browser <- ISP <- DNS
+                         </li>
+     <li>
+       Get file
+       <br/>
+       browser -> ip address + route
+                  </li>
+     <li>
+       Get more files
+       <br/>
+       rinse and repeat 1-3 as the page requests or you visit another page ♻
+     </li>
+   </ol>
+   #+end_export
 
 ** Status Codes
    https://media.discordapp.net/attachments/244238416248569857/752886284992905216/1599572464244.jpg?width=700&height=525
