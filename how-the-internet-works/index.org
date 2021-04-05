@@ -93,11 +93,37 @@
 </html>
    #+end_src
 
+** Requests?
+   At this point, we're convinced that the browser parses and visualizes files.
+
+   But what about requests? Well, open up your inspect element and head over to the =network= tab and reload =hello.html=!
+
 * Where does the HTML come from when not Local?
-   But we don't have any of that data saved on our computer, so how did it figure out where the stuff is located and how it should look?
+   But we don't have any of that data saved on our computer, so how did the browser get the HTML for google.com?
+
+** ISPs and DNS
+   When we throw in google.com in our address bar, that query goes
+
+   browser -> ISP -> DNS
+
+   and the DNS performs a lookup for its address and returns something like =172.217.0.0= (Google has many IPs)
+
+   browser <- ISP <- DNS
+
+   Think of a DNS somewhat like a phonebook... if you still remember what those are 😅
+
+** Next
+   Next, your browser makes a request directly to Google's for the HTML.
 
 * Requests requests requests!
   For now, we'll focus on =GET= requests, but they're just easier to talk about.
+
+** What is a request?
+   Basically everything connected to the internet has its own IP address.
+
+   Via the address, it can expose endpoints which server up information depending on how they're invoked + its implementation.
+
+   Just as we were able to get HTML from our local filesystem, a simple apache server can expose the filesystem such that instead of your prefixed root path, it'll be =ip address/path/to/file=
 
 ** Status Codes
    https://media.discordapp.net/attachments/244238416248569857/752886284992905216/1599572464244.jpg?width=700&height=525
@@ -112,4 +138,6 @@
    - 5xx: Server Error
 
 ** The google.com Requests
+   TB to the that visit to google.com
+
    [[file:imgs/google-network-calls.png]]
