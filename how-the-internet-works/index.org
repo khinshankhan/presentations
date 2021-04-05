@@ -168,3 +168,27 @@
    TB to the that visit to google.com
 
    [[file:imgs/google-network-calls.png]]
+
+* $cenario
+  Now, if you're running a website, let's say you're doing it for profit. You have some model that has customers visit your site
+
+  Eg: A taco cart is selling tacos 🤨
+
+** How does it go down?
+   Like we've learned, every site follows the same pattern of requests per user.
+
+   What happens when many users visit your website at once?
+
+** Consequences?
+   You may not be able to handle a lot of users due to server limitations... you lose out on customers + other customers may have a bad experience 😱.
+
+* But we want $
+  There are a few ways to handle more customers.
+
+** The $ costs $$$?
+   There are a few costs and responsibilities associated with having your own server room:
+   #+ATTR_REVEAL: :frag (t)
+   - cost of actual hardware ⚙
+   - space to hold the hardware 🖥
+   - wire management 🙄
+   - keeping proper temperature 🌡
