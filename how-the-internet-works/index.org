@@ -47,6 +47,53 @@
 ** How does our Browser Know?
    Our browser somehow automagically figured out the logo and search bar and everything else.
 
+   To understand this, we have to understand the role of a browser -->
+
+* ELI5 Browser
+  A browser can be boiled down to 2 functionalities:
+
+  1. Make requests
+  2. Parse and render files
+
+** Let's go Local
+   Let's save this into a file like =hello.html=
+   #+begin_src html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Hello</title>
+  </head>
+  <body>Hello there.</body>
+</html>
+   #+end_src
+
+** Now let's view it!
+   Copy the path eg
+   #+begin_src text
+/home/shan/hello.html
+   #+end_src
+   (it'll differ per OS and user and where you save...)
+
+   and paste it in the address bar in your browser!
+
+** Let's try some Pizzazz
+   Let's view this (I know... center is deprecated but still supported by every browser mkay? 🙄):
+
+   #+begin_src html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Hello</title>
+  </head>
+  <body style="color: salmon;">
+    <center>Hello there.</center>
+  </body>
+</html>
+   #+end_src
+
+* Where does the HTML come from when not Local?
    But we don't have any of that data saved on our computer, so how did it figure out where the stuff is located and how it should look?
 
 * Requests requests requests!
