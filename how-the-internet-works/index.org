@@ -210,3 +210,21 @@
   VMs probably led to the evolution towards containerization.
 
   The idea is maybe your programs can share more lower level things and sandbox differently.
+
+* Okay Okay, Show me Severless!
+  So, time for another scenario to see why serverless: a flower chain selling flowers 🌺
+
+  For this chain, let's say it doesn't only sell to one location like the taco cart may have.
+
+** Day to Day Usage
+   Your traffic may be low on some days but spike during Valentine's Day.
+
+   You're paying needless $$$ 😱
+
+* Automagical Servers
+  Maybe... just maybe... servers can scale up and down as needed.
+
+  This gives rise to AWS and GCP.
+
+** Another Meme
+   https://cdn.discordapp.com/attachments/260896487318355968/825045132281380924/unknown.png
