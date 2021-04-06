@@ -192,3 +192,21 @@
    - space to hold the hardware 🖥
    - wire management 🙄
    - keeping proper temperature 🌡
+   - electric bills ⚡
+
+* Give Responsibility Away!
+  This is how VPS came to be.
+
+  Basically someone owns data centers and farms and has a bunch of machines running anyways, so they rent out some to users.
+
+* VMs
+  I'm not totally clear if VMs came first or VPS, but users would want to run multiple things OS dependently which meant they would need multiple machines... or did it?
+
+  VMs basically virtual-izes OSs such that it has its own CPU, memory, network interface, and storage from your one setup.
+
+  This lets you either switch seamlessly or potentially have both running at the same time $$$
+
+* Containerization
+  VMs probably led to the evolution towards containerization.
+
+  The idea is maybe your programs can share more lower level things and sandbox differently.
